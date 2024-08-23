@@ -8,7 +8,6 @@ import authRoutes from './routes/authRoute.js'
 import reservaRoutes from './routes/reservaRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 
-app.use(cors(corsOptions))
 
 //Cargar variables de entorno
 
@@ -17,6 +16,9 @@ dotenv.config()
 //Configurar la app
 
 const app = express()
+
+
+app.use(cors(corsOptions))
 
 //Leer datos via body
 app.use(express.json())
