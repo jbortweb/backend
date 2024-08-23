@@ -25,7 +25,7 @@ db()
 
 //configurar cors
 
-const whiteList = [process.env.FRONTEND_URL, undefined] // IMPORTANTE Eliminar undefined en produccion
+const whiteList = [process.env.FRONTEND_URL/* , undefined */] // IMPORTANTE Eliminar undefined en produccion
 
 const corsOptions = {
   origin: function(origin, callback) {
