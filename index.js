@@ -8,6 +8,8 @@ import authRoutes from './routes/authRoute.js'
 import reservaRoutes from './routes/reservaRoutes.js'
 import userRoutes from './routes/userRoutes.js'
 
+app.use(cors(corsOptions))
+
 //Cargar variables de entorno
 
 dotenv.config()
@@ -36,7 +38,6 @@ const corsOptions = {
     }
   }
 }
-app.use(cors(corsOptions))
 
 //Definir las rutas
 app.use('/api/services', servicesRoutes)
