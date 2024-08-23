@@ -17,9 +17,6 @@ dotenv.config()
 
 const app = express()
 
-
-app.use(cors(corsOptions))
-
 //Leer datos via body
 app.use(express.json())
 
@@ -40,6 +37,7 @@ const corsOptions = {
     }
   }
 }
+app.use(cors(corsOptions))
 
 //Definir las rutas
 app.use('/api/services', servicesRoutes)
