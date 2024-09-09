@@ -11,10 +11,10 @@ export async function sendEmailNuevaReserva({date,time}) {
   //Enviar emails
 
   const info = await transporter.sendMail({
-    from: "JR Llansola <citas@correo.com",
-    to: "jrllansola@correo.com",
-    subject: "JR Llansola - Nueva cita",
-    text: "JR Llansola - Nueva cita",
+    from: "Jbortweb <jbortweb@gmail.com",
+    to: "jbortweb@gmail.com",
+    subject: "Jbortweb - Nueva cita",
+    text: "Jbortweb - Nueva cita",
     html:`<p>Hola: Tienes una nueva cita </p>
     <p>La cita será el día: ${date} a las ${time} horas</p>`
   })
@@ -33,10 +33,10 @@ export async function sendEmailUpdateReserva({date,time}) {
   //Enviar emails
 
   const info = await transporter.sendMail({
-    from: "JR Llansola <citas@correo.com",
-    to: "jrllansola@correo.com",
-    subject: "JR Llansola - Cita actualizada",
-    text: "JR Llansola - Cita actualizada",
+    from: "Jbortweb <jbortweb@gmail.com",
+    to: "jbortweb@gmail.com",
+    subject: "Jbortweb - Cita actualizada",
+    text: "Jbortweb - Cita actualizada",
     html:`<p>Hola: Un usuario ha modificado una cita </p>
     <p>La nueva cita será el día: ${date} a las ${time} horas</p>`
   })
@@ -55,10 +55,10 @@ export async function sendEmailDeleteReserva({date,time}) {
   //Enviar emails
 
   const info = await transporter.sendMail({
-    from: "JR Llansola <citas@correo.com",
-    to: "jrllansola@correo.com",
-    subject: "JR Llansola - Cita cancelada",
-    text: "JR Llansola - Cita cancelada",
+    from: "Jbortweb <jbortweb@gmail.com",
+    to: "jbortweb@gmail.com",
+    subject: "Jbortweb - Cita cancelada",
+    text: "Jbortweb - Cita cancelada",
     html:`<p>Hola: Un usuario ha cancelado una cita </p>
     <p>La cita cancelada era el día: ${date} a las ${time} horas</p>`
   })

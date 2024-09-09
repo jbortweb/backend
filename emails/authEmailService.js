@@ -11,11 +11,11 @@ export async function sendEmailVerification({name,email,token}) {
   //Enviar emails
 
   const info = await transporter.sendMail({
-    from: "JR Llansola <jrllansola@correo.com",
+    from: "Jbortweb <jbortweb@gmail.com",
     to: email,
-    subject: "JR Llansola - Confirma tu cuenta",
-    text: "JR Llansola - Confirma tu cuenta",
-    html:`<p>Hola: ${name}, confirma tu cuenta en JR LLansola </p>
+    subject: "Jbortweb - Confirma tu cuenta",
+    text: "Jbortweb - Confirma tu cuenta",
+    html:`<p>Hola: ${name}, confirma tu cuenta en Jbortweb </p>
     <p>Tu cuenta esta casi lista, presiona el enlace para activarla</p>
     <a href="${process.env.FRONTEND_URL}/auth/confirmar-cuenta/${token}">Confirmar cuenta</a>
     <p>Si no creaste esta cuenta puedes ignorar este mensaje</p>`
@@ -35,10 +35,10 @@ export async function sendEmailPasswordReset({name,email,token}) {
   //Enviar emails
 
   const info = await transporter.sendMail({
-    from: "JR Llansola <jrllansola@correo.com",
+    from: "Jbortweb <jbortweb@gmail.com",
     to: email,
-    subject: "JR Llansola - Restablece tu contraseña",
-    text: "JR Llansola - Restablece tu contraseña",
+    subject: "Jbortweb - Restablece tu contraseña",
+    text: "Jbortweb - Restablece tu contraseña",
     html:`<p>Hola: ${name}, has solicitado reestablecer tu contraseña</p>
     <p>Presiona al siguiente enlace para generar una nueva contraseña</p>
     <a href="${process.env.FRONTEND_URL}/auth/olvide-password/${token}">Generar contraseña</a>
