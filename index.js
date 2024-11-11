@@ -28,7 +28,7 @@ db()
 
 const whiteList = [process.env.FRONTEND_URL]
 
-/* const corsOptions = {
+const corsOptions = {
   origin: function(origin, callback) {
     if (whiteList.includes(origin)) {
       callback(null, true)
@@ -36,7 +36,7 @@ const whiteList = [process.env.FRONTEND_URL]
       callback(new Error('Error de CORS'))
     }
   }
-} */
+}
 app.use(cors(/* corsOptions */))
 
 //Definir las rutas
